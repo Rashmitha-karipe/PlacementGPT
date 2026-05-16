@@ -1,50 +1,34 @@
-# ==========================================
-# SIMPLE CHAT MEMORY
-# ==========================================
-
-chat_history = []
+from langchain.memory import ConversationBufferMemory
 
 # ==========================================
-# FUNCTION TO SAVE CHAT
+# CREATE MEMORY
 # ==========================================
 
-def save_message(user_input, ai_output):
-
-    chat_history.append({
-        "user": user_input,
-        "ai": ai_output
-    })
-
-# ==========================================
-# FUNCTION TO SHOW CHAT HISTORY
-# ==========================================
-
-def show_history():
-
-    print("\nChat History:\n")
-
-    for i, chat in enumerate(chat_history, start=1):
-
-        print(f"Conversation {i}")
-
-        print("User:", chat["user"])
-
-        print("AI:", chat["ai"])
-
-        print("-" * 50)
-
-# ==========================================
-# TEST MEMORY
-# ==========================================
-
-save_message(
-    "Explain BFS",
-    "BFS means Breadth First Search"
+memory = ConversationBufferMemory(
+    memory_key="chat_history",
+    return_messages=True
 )
 
-save_message(
-    "Explain DFS",
-    "DFS means Depth First Search"
+# ==========================================
+# SAVE CONVERSATIONS
+# ==========================================
+
+memory.save_context(
+    {"input": "Explain BFS"},
+    {"output": "BFS means Breadth First Search"}
 )
 
-show_history()
+memory.save_context(
+    {"input": "Explain DFS"},
+    {"output": "DFS means Depth First Search"}
+)
+
+# ==========================================
+# LOAD MEMORY
+# ==========================================
+
+chat_history = memory.load_memory_variables({})
+
+print("\nChat History:\n")
+
+print(chat_history)

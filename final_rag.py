@@ -1,26 +1,13 @@
 from langchain_groq import ChatGroq
-from dotenv import load_dotenv
-
 from hybrid_retriever import hybrid_search
 
-import os
-
 # ==========================================
-# LOAD ENV VARIABLES
-# ==========================================
-
-load_dotenv()
-
-groq_api_key = os.getenv("GROQ_API_KEY")
-
-# ==========================================
-# LOAD GROQ LLM
+# LOAD LLM
 # ==========================================
 
 llm = ChatGroq(
-    groq_api_key=groq_api_key,
-    model_name="llama-3.1-8b-instant"
-
+    groq_api_key="YOUR_GROQ_API_KEY",
+    model_name="llama3-8b-8192"
 )
 
 # ==========================================
@@ -33,31 +20,21 @@ chat_history = []
 # CHAT LOOP
 # ==========================================
 
-print("\n🚀 PlacementGPT Started!")
-print("Type 'exit' to quit.\n")
-
 while True:
 
-    query = input("Ask Question: ")
-
-    # ======================================
-    # EXIT CONDITION
-    # ======================================
+    query = input("\nAsk Question: ")
 
     if query.lower() == "exit":
-
-        print("\nGoodbye!\n")
-
         break
 
     # ======================================
-    # HYBRID RETRIEVAL
+    # HYBRID SEARCH
     # ======================================
 
     vector_results, bm25_results = hybrid_search(query)
 
     # ======================================
-    # BUILD CONTEXT
+    # CREATE CONTEXT
     # ======================================
 
     context = ""
@@ -73,7 +50,7 @@ while True:
         context += doc + "\n"
 
     # ======================================
-    # CHAT HISTORY
+    # ADD CHAT HISTORY
     # ======================================
 
     history_text = ""
@@ -102,11 +79,7 @@ while True:
     User Question:
     {query}
 
-    Instructions:
-    - Answer clearly
-    - Use the given context
-    - Keep answers concise
-    - Help with interview preparation
+    Give a clear and concise answer.
     """
 
     # ======================================
@@ -117,15 +90,9 @@ while True:
 
     answer = response.content
 
-    # ======================================
-    # DISPLAY RESPONSE
-    # ======================================
-
-    print("\n🤖 AI Response:\n")
+    print("\nAI Response:\n")
 
     print(answer)
-
-    print("\n" + "=" * 70 + "\n")
 
     # ======================================
     # SAVE MEMORY
