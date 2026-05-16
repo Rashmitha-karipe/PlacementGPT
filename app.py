@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain_groq import ChatGroq
+from langchain-groq import ChatGroq
 from hybrid_retriever import hybrid_search
 from dotenv import load_dotenv
 import os
