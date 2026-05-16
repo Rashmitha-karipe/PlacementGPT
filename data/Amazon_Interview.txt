@@ -1,0 +1,53 @@
+Amazon Interview Preparation Data
+Amazon Leadership Principles Questions
+Customer Obsession
+Tell me about a time you handled a difficult customer.
+Describe a situation where you went above expectations.
+How did you improve customer experience in a project?
+Ownership
+Tell me about a time you took responsibility beyond your role.
+Describe a project where you handled everything independently.
+Have you ever fixed a problem nobody noticed?
+Invent and Simplify
+Explain a process you simplified.
+Tell me about an innovative idea you implemented.
+Describe a situation where automation saved time.
+Bias for Action
+Tell me about a quick decision you made under pressure.
+Describe a time when waiting would have caused failure.
+Learn and Be Curious
+What new technology did you learn recently?
+How do you keep improving your technical skills?
+Amazon OA Coding Questions
+Arrays
+Two Sum
+Best Time to Buy and Sell Stock
+Product of Array Except Self
+Maximum Subarray
+Rotate Array
+Sliding Window
+Longest Substring Without Repeating Characters
+Minimum Window Substring
+Maximum Sum Subarray of Size K
+Trees
+Binary Tree Level Order Traversal
+Lowest Common Ancestor
+Diameter of Binary Tree
+Graphs
+Number of Islands
+Clone Graph
+Course Schedule
+Dynamic Programming
+Climbing Stairs
+House Robber
+Longest Increasing Subsequence
+Coin Change
+Amazon HR Questions
+Tell me about yourself.
+Why Amazon?
+Why should we hire you?
+Describe your strengths and weaknesses.
+Explain a challenging situation you faced.
+Where do you see yourself in 5 years?
+Tell me about a failure and what you learned.
+Describe a conflict in a team project

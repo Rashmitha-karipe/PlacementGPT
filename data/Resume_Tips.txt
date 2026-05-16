@@ -1,0 +1,34 @@
+Resume Tips Data
+Resume Structure
+Header
+Name
+Email
+Phone Number
+LinkedIn
+GitHub
+Career Objective
+Education
+Skills
+Projects
+Certifications
+Achievements
+Internships
+ATS Friendly Resume Tips
+Use simple formatting.
+Avoid tables and graphics.
+Use professional fonts.
+Add keywords from job descriptions.
+Keep resume within one page.
+Quantify achievements.
+Use action verbs.
+Strong Action Verbs
+Developed
+Implemented
+Optimized
+Designed
+Automated
+Improved
+Led
+Analyzed
+Built
+Solved

@@ -1,0 +1,50 @@
+DSA Questions Data
+Arrays
+Two Sum
+Kadane’s Algorithm
+Merge Intervals
+Move Zeroes
+Container With Most Water
+Strings
+Valid Anagram
+Longest Palindromic Substring
+Group Anagrams
+String Compression
+Linked Lists
+Reverse Linked List
+Detect Cycle
+Merge Two Sorted Lists
+Remove Nth Node
+Stacks and Queues
+Valid Parentheses
+Min Stack
+Implement Queue Using Stacks
+Trees
+Inorder Traversal
+Maximum Depth of Binary Tree
+Symmetric Tree
+Path Sum
+Graphs
+BFS Traversal
+DFS Traversal
+Dijkstra Algorithm
+Topological Sort
+Dynamic Programming
+Fibonacci DP
+0/1 Knapsack
+Longest Common Subsequence
+Edit Distance
+Coin Change
+Greedy Algorithms
+Activity Selection
+Jump Game
+Gas Station Problem
+Backtracking
+N Queens
+Sudoku Solver
+Subsets
+Permutations
+Bit Manipulation
+Single Number
+Counting Bits
+Power of Two
