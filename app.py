@@ -26,10 +26,11 @@ if not groq_api_key:
 # ==========================
 # LOAD LLM
 # ==========================
-llm = ChatGroq(
+#llm = ChatGroq(
     groq_api_key=groq_api_key,
     model_name="llama-3.1-8b-instant"
-)
+#)
+llm= None
 
 # ==========================
 # CUSTOM CSS
@@ -183,8 +184,9 @@ Instructions:
     # GENERATE RESPONSE
     # ==========================
     with st.spinner("🤖 Thinking..."):
-        response = llm.invoke(prompt)
-        answer = response.content
+        answer = "Test mode - LLM disabled"
+        #response = llm.invoke(prompt)
+        #answer = response.content
 
     st.session_state.messages.append({
         "role": "assistant",
