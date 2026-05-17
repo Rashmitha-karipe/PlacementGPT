@@ -29,33 +29,26 @@ Users can upload interview experiences, DSA notes, HR questions, resumes, and pr
 
 # 🧠 Flowchart
 ![FlowChart](screenshots/flowchart.png)
+---
+
+---
+#Sequence Diagram
 
 ![Sequence Diagram](screenshots/sequence_diaram.png)
+---
+
+---
+#Class Diagram
+
 
 ![Class Diagram](screenshots/class_diagram.png)
-
-
-
-
 ---
 
-# 📸 Screenshots
 
-## 🏠 Home Page
 
-![Home](screenshots/home.png)
 
----
 
-## 💬 Chat Interface
 
-![Chat](screenshots/chat.png)
-
----
-
-## ⚙️ Sidebar
-
-![Sidebar](screenshots/sidebar.png)
 
 ---
 
